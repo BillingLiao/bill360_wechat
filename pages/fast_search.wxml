@@ -1,0 +1,53 @@
+
+  <view style="height:100%;">
+    <view class="fast_search_up" style="background-color:#13376E">
+      <view class="fast_search_up_bgc">
+           <view class="fast_search_up_li">
+              <image src="./../img/qiye@2x.png" class="fast_search_icon" style=" width: 41rpx;height: 40rpx;"/>
+            <input type="text" class="fast_search_input" placeholder="核心企业名称" bindinput="coreInput" value="{{core}}"/>
+            
+           </view>
+           <view class="fast_search_up_li">
+              <image src="./../img/piaomian@2x.png" class="fast_search_icon" style=" width: 42rpx;height: 35rpx;"/>
+            <input type="digit" class="fast_search_input" placeholder="票面金额(元)" bindinput="subsidyInput" value="{{subsidy}}"/>
+           </view>
+           <view class="fast_search_up_li" style="  border:none;">
+              <image src="./../img/time@2x.png" class="fast_search_icon" style=" width: 36rpx;height: 36rpx;"/>
+            <!-- <input type="text" class="fast_search_input" placeholder="到期时间"> -->
+              <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                <input class="fast_search_input" placeholder="到期时间" value="{{date}}" disabled/>
+              </picker>
+           </view>
+               <view class="fast_search_div">
+                 <!-- <navigator  url="./fast_search_result">  -->
+                 <view bindtap="getData">
+        <button class="fast_search_button">
+                <image src="./../img/search_icon@2x.png" class="search_icon_font"/> <span style="font-size:32rpx;font-weight:600;">快速查询</span>
+        </button>
+        </view>
+        <!-- </navigator> -->
+      </view>
+      </view>
+  
+    </view>
+    <view class="fast_search_down" style="background-color:#fff;">
+        <view class="down_top_font clear">
+            <view class="rrr">
+              <view class="down_top_font_size clear"> 历史搜索 </view> 
+                 <image src="./../img/delete@2x.png" class="delete_icon" bindtap="cleanHistory"/>
+            </view>
+            <view class="eee "  wx:for="{{historyData}}" wx:key="item">
+              <view class="history_content" data-title="{{item.word}}" bindtap="clickHistory" style="display:{{historyNone}}">{{item.word}}</view>
+            </view>
+        </view> 
+        <view class="down_top_font">
+            <view class="rrr">
+              <view class="down_top_font_size clear"> 热门搜索 </view>   
+               <!-- <image src="./../img/delete@2x.png" class="delete_icon" bindtap="cleanHot"> -->
+            </view>
+            <view class="eee"  wx:for="{{hotData}}" wx:key="item">
+              <view class="history_content" bindtap="clickHot" data-title="{{item.word}}" style="display:{{hotNone}}">{{item.word}}</view> 
+            </view>
+        </view> 
+    </view>    
+  </view>

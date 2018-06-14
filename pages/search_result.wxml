@@ -1,0 +1,66 @@
+
+  <view class="search_result">
+    <view class="search_result_up">
+        <view class="search_result_up_bgi">      
+            <view class="number weight"><view value="{{fastSubsidy}}" type="digit">{{fastSubsidy}}</view></view>  
+            <view class="yajin lanse">保理金额(元)</view>          
+            <view class="yajin juse">每十万保理{{fastMoney}}元</view>
+                <view class="lixi">
+                    <view class="li_number  lanse weight"><view value="{{fastInterest}}" type="digit">{{fastInterest}} </view></view>
+                    <view class="li_font yajin lanse ">保理利息(元)</view>                    
+                </view>                                            
+                <view class="lixi">
+                    <view class="li_number  lanse weight"><view value="{{fastDay}}" type="digit">{{fastDay}}</view></view>
+                    <view class="li_font yajin lanse ">计息天数(天)</view>                    
+                </view>                                            
+        </view>
+    </view>
+    <view class="search_result_down" >
+        <view class="search_result_ul">
+            <view class="search_result_li weight" wx:if="{{minBill.offer == 0}}">
+                <view class="search_result_li_left">报价方式</view>
+                <view class="search_result_li_right">年化</view> 
+            </view>
+            <view class="search_result_li weight" wx:if="{{minBill.offer == 1}}">
+                <view class="search_result_li_left">报价方式</view>
+                <view class="search_result_li_right">每十万扣费</view> 
+            </view>
+            <view class="search_result_li weight" wx:if="{{minBill.offer == 2}}">
+                <view class="search_result_li_left">报价方式</view>
+                <view class="search_result_li_right">直接扣</view> 
+            </view>
+            <view class="search_result_li weight" wx:if="{{minBill.offer == 0}}">
+                <view class="search_result_li_left">报价</view> 
+                <view class="search_result_li_right">{{minBill.rate}}% \t \t +{{minBill.adjuest}}天</view>                 
+            </view>
+            <view class="search_result_li weight" wx:elif="{{minBill.offer == 1}}">
+                <view class="search_result_li_left">报价</view> 
+                <view class="search_result_li_right">{{minBill.deductions}} 元</view>                         
+            </view>
+            <view class="search_result_li weight" wx:elif="{{minBill.offer == 2}}">
+                <view class="search_result_li_left">报价</view> 
+                <view class="search_result_li_right">{{minBill.direct}}%</view>                         
+            </view>
+            <view class="search_result_li weight" wx:if="{{minBill.max != ''}}">
+                <view class="search_result_li_left">最高价(万)</view> 
+                <view class="search_result_li_right">{{minBill.max}}</view>                         
+            </view> 
+            <view class="search_result_li weight" wx:if="{{minBill.min != ''}}">
+                <view class="search_result_li_left">最低价(万)</view>
+                <view class="search_result_li_right">{{minBill.min}}</view> 
+                <!-- {{item.shortest}}                        -->
+            </view>  
+        </view>
+        <view class="gery_tiao"/>    
+        <view class="shoupiao weight">— 收票渠道 —</view>
+        <view class="search_result_li weight">
+            <view class="search_result_li_left">联系方式：</view>
+            <view class="search_result_li_right">17322009880</view>
+            <!-- <view class="search_result_li_right">{{minBill.staff.phone}}</view>   -->                       
+        </view>
+        <view class="gery_tiao"/>
+        <view class="search_result_li weight" style="border:none">
+            <view bindtap="search">更详细结果，请使用 <span class="lanse"> 精确查询 </span> </view> 
+        </view>                
+    </view>    
+  </view>

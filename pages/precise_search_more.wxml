@@ -1,0 +1,35 @@
+ <view class="precise_search_more">
+      <view class="bgc_gery" />
+        <view class="wd">
+          <view class="top_info gery_color">基本信息</view>
+          <view class="top_info black_color mg_29">收票编号：{{billId}}</view>
+          <view class="top_info black_color mg_29">对接人姓名：{{billName}}</view>
+          <view class="top_info black_color mg_29">对接人公司：{{billCompany}}</view>
+        </view>
+      <view class="bgc_gery" />
+        <view class="wd">
+          <view class="top_info gery_color">收票要求</view>
+          <view class="top_info black_color mg_29">核心企业：{{billCore}}</view>
+          <view class="top_info black_color mg_29" wx:if="{{billInvoice == ''}}">承兑企业：全部</view>
+          <view class="top_info black_color mg_29" wx:else>承兑企业：{{billInvoice}}</view>
+          <view class="top_info black_color mg_29" wx:if="{{billOffer == 0}}">报价方式：年化</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billOffer == 1}}">报价方式：每十万扣费</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billOffer == 2}}">报价方式：直接扣</view>
+          <view class="top_info black_color mg_29" wx:if="{{billOffer == 0}}">报价：{{billRate}}% + {{billAdjuest}}天</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billOffer == 1}}">报价：{{billDeductions}}元</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billOffer == 2}}">报价：{{billDirect}}%</view>
+           <view class="top_info black_color mg_29" wx:if="{{billEndorseTime != ''}}">背书次数限制：{{billEndorseTime}}</view>
+          <view class="top_info black_color mg_29" wx:if="{{billIsBargain == 0}}">合同：需要</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billIsBargain == 1}}">合同：不需要</view>
+           <view class="top_info black_color mg_29" wx:if="{{billIsInvoice == 0}}">发票：需要</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billIsInvoice == 1}}">发票：不需要</view>
+           <view class="top_info black_color mg_29" wx:if="{{billAgreement == 0}}">质押协议：需要</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billAgreement == 1}}">质押协议：不需要</view>
+           <view class="top_info black_color mg_29" wx:if="{{billIsFinancing == 0}}">融资票：接受</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billIsFinancing == 1}}">融资票：不接受</view>
+           <view class="top_info black_color mg_29" wx:if="{{billIsClean == 0}}">光票：接受</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billIsClean == 1}}">光票：不接受</view>
+           <view class="top_info black_color mg_29" wx:if="{{billIsMoneyorback == 0}}">背款：先背书</view>
+          <view class="top_info black_color mg_29" wx:elif="{{billIsMoneyorback == 1}}">背款：先打款</view>
+        </view>
+  </view>

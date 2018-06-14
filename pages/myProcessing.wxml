@@ -1,0 +1,17 @@
+<view>
+  <view class="myProcessing" onPullDownRefresh="onPullDownRefresh">
+    <ul class="myProcessing_ul " wx:for="{{processingList}}" wx:key="{{item}}">
+      <li class="myProcessing_li clear" bindtap="url_form" data-id="{{item.id}}">
+        <image src="./../img/label@2x.png" class="yellow_icon" />
+        <view class="processing_in">
+          <span class="yewu_bianhao">业务编号：{{item.id}}</span>
+          <span class="dingdan_time"> 订单时间：{{item.stime}} </span>
+        </view>
+      </li>
+    </ul>
+    <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+      <view class="weui-loading" />
+      <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+  </view>
+</view>

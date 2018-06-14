@@ -1,0 +1,85 @@
+.weight {
+  font-weight: 600;
+}
+.lanse {
+  color: #012f83;
+}
+.juse {
+  color: #ff9c00;
+}
+.yajin {
+  font-size: 24rpx;
+  text-align: center;
+}
+.gery_tiao {
+  background-color: #eef1f4;
+  height: 20rpx;
+}
+.search_result_li {
+  width: 100%;
+  border-bottom: 1rpx solid #efeded;
+  line-height: 109rpx;
+  height: 109rpx;
+  font-size: 30rpx;
+  color: #242424;
+  padding-left: 28rpx;
+}
+.search_result_li .search_result_li_left {
+  width: 30%;
+  display: inline-block;
+}
+.search_result_li .search_result_li_right {
+  width: 70%;
+  display: inline-block;
+}
+.search_result {
+  height: 100%;
+}
+.search_result .search_result_up {
+  height: 30%;
+  background-color: #0249a0;
+  position: relative;
+}
+.search_result .search_result_up .search_result_up_bgi {
+  box-shadow: 0rpx 0rpx 20rpx 0rpx #aab2d0;
+  position: absolute;
+  top: 49rpx;
+  left: 30rpx;
+  z-index: 999;
+  width: 690rpx;
+  height: 400rpx;
+  background-color: #fff;
+  border-radius: 18rpx;
+}
+.search_result .search_result_up .search_result_up_bgi .number {
+  margin-top: 61rpx;
+  text-align: center;
+  width: 100%;
+  color: #012f83;
+  font-size: 65rpx;
+}
+.search_result .search_result_up .search_result_up_bgi .lixi {
+  margin-top: 67rpx;
+  width: 50%;
+  display: inline-block;
+}
+.search_result .search_result_up .search_result_up_bgi .lixi .li_number {
+  font-size: 40rpx;
+  text-align: center;
+  width: 100%;
+}
+.search_result .search_result_up .search_result_up_bgi .lixi .li_font {
+  width: 100%;
+}
+.search_result .search_result_down .search_result_ul {
+  margin-top: 119rpx;
+}
+.search_result .search_result_down .shoupiao {
+  width: 100%;
+  text-align: center;
+  height: 109rpx;
+  border-bottom: 1rpx solid #efeded;
+  line-height: 109rpx;
+  color: #232222;
+  font-size: 30rpx;
+}

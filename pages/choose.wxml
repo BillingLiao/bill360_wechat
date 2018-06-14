@@ -1,0 +1,15 @@
+
+  <view class="container ">
+    <view class="header">
+      <view>
+        <image class="widget__arrow" src="./../img/logo@2x.png" mode="aspectFill"/>  
+        <image class="widget__right" src="./../img/photo@2x.png" mode="aspectFill"/>  
+      </view>
+    </view>
+    <view class="section bgc_img">
+          <view class="chapiao"/>
+    </view>
+    <view class="footer">
+      <navigator url="./personCenter">  <image class="footer_left_img" src="./../img/me@2x.png" mode="aspectFill"/>        </navigator>
+      </view>    
+  </view>

@@ -1,0 +1,62 @@
+<view class="container" style="background-color:#13376E">
+  <view style="width:90%;margin:0 auto;">
+    <view class="person_header" wx:for="{{switchLogin}}" wx:key="{{item}}">
+      <view class="person_header_img">
+        <image src="https://xcx.wenxikeji.com/bill360/upload/{{item.head}}" class="img_size" />
+        <!-- <image src="https://xcx.wenxikeji.com/user/upload/"  class="img_size">  -->
+        <!-- + {{item.user.head}}                    -->
+      </view>
+      <view class="person_header_font">
+        <view style="margin-top:53rpx;">
+          <view class="person_header_font_size" style="font-size:30rpx;padding-bottom:20rpx;">
+            <span>{{item.name}} \n</span>
+          </view>
+          <view class="person_header_font_size" style="font-size:22rpx;">
+            <span>账号：{{item.phone}} \n</span>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="person_section" wx:for="{{cardInfo}}" wx:key="{{item}}">
+      <view class="person_bgc" style="height:100%;">
+        <view class="card_in">
+          <view class="bbb">
+            <span class="mingpian">我的名片</span>
+            <navigator url="person_compile" style="width:60%;display:inline-block;text-align: right;">
+              <span class="bianji">编辑</span>
+            </navigator>
+          </view>
+          <view class="ccc" wx:if="{{item.name != null}}">
+            <span class="card_content">姓 \t 名</span>
+            <view class="card_input cards_font_size"> {{item.name}}</view>
+          </view>
+          <!--<view class="ccc"> <span class="card_content">职 \t  称</span> <view class="card_input cards_font_size"> {{item.duty}}</view> </view>   -->
+          <view class="ccc" wx:if="{{item.company != null}}">
+            <span class="card_content">公 \t 司</span>
+            <view class="card_input cards_font_size"> {{item.company}}</view>
+          </view>
+          <view class="ccc" wx:if="{{item.addr != null}}">
+            <span class="card_content">地 \t 址</span>
+            <view class="card_input cards_font_size"> {{item.addr}} </view>
+          </view>
+          <view class="ccc" wx:if="{{item.tel != null}}">
+            <span class="card_content">固 \t 话</span>
+            <view class="card_input cards_font_size"> {{item.tel}} </view>
+          </view>
+          <view class="ccc" wx:if="{{item.phone != null}}">
+            <span class="card_content">手机号</span>
+            <view class="card_input cards_font_size"> {{item.phone}} </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="person_footer">
+      <navigator url="./myProcessing">
+        <view class="dingdan">
+          <span>我的业务订单</span>
+          <image src="./../img/more@2x.png" class="right_icon" />
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

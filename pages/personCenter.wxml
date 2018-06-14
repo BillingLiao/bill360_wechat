@@ -1,0 +1,34 @@
+
+  <view class="container" style="background-color:#13376E">
+        <view style="width:90%;margin:0 auto;">
+        <view class="person_header">
+                <view class="person_header_img">  
+                    <image src="{{userHeaderImg}}" class="img_size"/> 
+                </view>
+                <view class="person_header_font">
+                    <view style="margin-top:53rpx;">
+                        <view class="person_header_font_size" style="font-size:30rpx;padding-bottom:20rpx;"> <span>{{userName}} \n</span> </view>  
+                        <navigator class="person_header_font_size" style="font-size:22rpx;" url="./login"> <span>账号：{{userAccount}} \n</span> </navigator>  
+                    </view>
+                </view>                
+        </view>
+        <view class="person_section">
+          <view class="person_bgc" style="height:100%;">
+              <view class="card_in">
+                <view class="bbb"> <span class="mingpian">我的名片</span>  <span class="bianji" bindtap="getData">{{saveORcompile}}</span> </view>
+                <view class="ccc"> <span class="card_content">姓 \t  名</span> <input type="text" class="card_input" bindinput="nameInput"/> </view>                
+                <view class="ccc"> <span class="card_content">公 \t  司</span> <input type="text" class="card_input" bindinput="companyInput"/> </view>    
+                <view class="ccc"> <span class="card_content">地 \t  址</span> <input type="text" class="card_input" bindinput="addrInput"/> </view>                
+                <view class="ccc"> <span class="card_content">固 \t  话</span> <input type="text" class="card_input" bindinput="telInput"/> </view>                                            
+                <view class="ccc"> <span class="card_content">手机号</span> <input type="number" maxlength="11" class="card_input" bindinput="phoneInput"/> </view>                                            
+              </view>
+          </view>
+        </view>
+        <view class="person_footer">
+          <view class="dingdan"> 
+            <span>我的业务订单</span> 
+              <image src="./../img/more@2x.png" class="right_icon"/>
+            </view>
+          </view>            
+        </view>
+  </view>

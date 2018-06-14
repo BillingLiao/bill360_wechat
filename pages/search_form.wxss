@@ -1,0 +1,40 @@
+.search_from {
+  max-height: 667rpx;
+  background-color: #fff;
+}
+.search_from .wd {
+  width: 95%;
+  margin: 0 auto;
+  padding: 40rpx 0rpx;
+}
+.search_from .wd .top_info {
+  font-size: 30rpx;
+}
+.search_from .wd .gery_color {
+  color: #939597;
+}
+.search_from .wd .black_color {
+  color: #181818;
+}
+.search_from .wd .mg_29 {
+  margin-top: 29rpx;
+}
+.search_from .bgc_gery {
+  height: 20rpx;
+  background-color: #f3f5f7;
+}
+.search_from .button_true_no {
+  margin-top: 131rpx;
+  padding-bottom: 162rpx;
+}
+.search_from .button_true_no .button_font {
+  height: 104rpx;
+  width: 670rpx;
+  line-height: 104rpx;
+  color: #fff;
+  background-color: #0249a0;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 52rpx;
+  margin-left: 40rpx;
+}

@@ -1,0 +1,45 @@
+.danhang {
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+}
+.total {
+  padding-top: 250rpx;
+  box-sizing: border-box;
+}
+.total .trueIcon {
+  vertical-align: middle;
+  width: 52rpx;
+  height: 54rpx;
+  margin-right: 17rpx;
+  box-sizing: border-box;
+}
+.total .bg_font {
+  color: #232222;
+  box-sizing: border-box;
+  padding-bottom: 52rpx;
+  font-size: 58rpx;
+}
+.total .erweima {
+  width: 160rpx;
+  height: 160rpx;
+}
+.total .font_size {
+  font-size: 28rpx;
+  color: #515558;
+}
+.total .form_button {
+  padding-top: 269rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  display: inline-block;
+  color: #2a2a2a;
+}
+.total .examine_form {
+  line-height: 74rpx;
+  text-align: center;
+  border-radius: 37rpx;
+  border: 2rpx solid #ffb238;
+  width: 220rpx;
+  height: 74rpx;
+}

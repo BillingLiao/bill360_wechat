@@ -1,0 +1,20 @@
+
+    <view>
+        <view>
+            <image src="./../img/bgchapiao@2x.png" class="img_360"/>
+        </view>
+        <view class="login_section">
+            <view class="login_in">
+                <image src="./../img/phone@2x.png" class="phone_icon"/>
+                <input type="number" maxlength="11" placeholder="请输入手机号" class="phone_input" bindinput="inputPhone"/>
+            </view>
+            <view class="login_in">
+                <image src="./../img/Code@2x.png" class="code_icon"/>
+                <input type="number" placeholder="验证码" class="phone_input" bindinput="inputCode"/>
+                <button class="getCode" bindtap="getInfo" disabled="{{disabled}}">{{time}}</button>
+            </view>
+        </view>
+        <view class="login_footer">
+           <view>   <button class="blue_button" bindtap="login">登录/注册</button> </view>
+        </view>
+    </view>

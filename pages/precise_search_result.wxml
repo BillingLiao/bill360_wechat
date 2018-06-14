@@ -1,0 +1,68 @@
+<view class="search_result">
+    <view class="search_result_up">
+        <view class="search_result_up_bgi">      
+            <view class="number weight"><view value="{{subsidy}}" type="digit">{{subsidy}}</view></view>  
+            <view class="yajin lanse">保理金额(元)</view> 
+            <view class="yajin juse">每十万保理{{money}}元</view>
+                <view class="lixi">
+                    <view class="li_number  lanse weight"> <view value="{{interest}}" type="digit">{{interest}} </view></view>
+                    <view class="li_font yajin lanse ">保理利息(元)</view>                    
+                </view>                                            
+                <view class="lixi">
+                    <view class="li_number  lanse weight"><view value="{{day}}" type="digit">{{day}}</view></view>
+                    <view class="li_font yajin lanse ">计息天数(天)</view>                    
+                </view>                                            
+                
+        </view>
+    </view>
+    <view class="search_result_down">
+        <view class="careful_search weight ">— 查询明细 —</view>
+        <view class="careful_search_table weight">
+          <view class="careful_search_tr bg_g">
+            <view class="careful_search_th">选择</view>
+            <view class="careful_search_th">报价方式</view>              
+            <view class="careful_search_th">报价</view>                                    
+            <view class="careful_search_th">详情</view>                                                                           
+          </view>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio" style="text-align:center;"  wx:for="{{preciseData}}" wx:key="{{item}}">
+          <view class="careful_search_tr">
+                <view class="careful_search_td">
+                  <radio class="" value="{{item.id}}" color="#ff9c00"> </radio>
+                </view> 
+                <view class="careful_search_td" wx:if="{{item.offer == 0}}">
+                年化
+                </view> 
+                <view class="careful_search_td" wx:if="{{item.offer == 1}}">
+                每十万扣费
+                </view>
+                <view class="careful_search_td" wx:if="{{item.offer == 2}}">
+                直接扣
+                </view>
+                <view class="careful_search_td" wx:if="{{item.offer == 0}}">
+                {{item.rate}}% + {{item.adjuest}}天
+                </view>
+                <view class="careful_search_td" wx:if="{{item.offer == 1}}">
+                {{item.deductions}}元
+                </view>
+                 <view class="careful_search_td" wx:if="{{item.offer == 2}}">
+                {{item.direct}}%
+                </view>
+                <view class="careful_search_td" style="text-align:center;"  id="{{item.id}}" bindtap="moreBill">
+                <view class="lanse"> 更多 </view>
+                </view>
+
+          </view>
+                </label>
+            </radio-group>                                                   
+          
+        </view>
+        <view class="gery_tiao"/>
+        <view class="precise_search_footer ">
+              <button class="btn btn_search" bindtap="orderSearch"> 仅查询 </button> 
+        <view url="./precise_search_dingdan" style="display:inline-block;">
+              <button class="btn btn_dingdan" bindtap="orderAdd"> 生成订单 </button> </view>
+        <!-- navigator -->
+        </view>                
+    </view>    
+  </view>

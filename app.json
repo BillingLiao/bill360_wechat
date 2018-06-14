@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/person_authorize",
+    "pages/fast_search",
+    "pages/search",
+    "pages/person",
+    "pages/login",
+    "pages/personCenter",
+    "pages/person_login",
+    "pages/person_compile",
+    "pages/myProcessing",
+    "pages/fast_search_result",
+    "pages/search_result",
+    "pages/affirm_bill_info",
+    "pages/precise_search_result",
+    "pages/precise_search_dingdan",
+    "pages/precise_search_more",
+    "pages/success_submit",
+    "pages/search_form"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

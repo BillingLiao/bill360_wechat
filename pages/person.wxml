@@ -1,0 +1,52 @@
+
+   <view class="container" style="background-color:#13376E">
+        <view style="width:95%;margin:0 auto;">
+        <view class="person_header">
+                <view class="person_header_img">  
+                    <!-- <image src="./../img/head@2x.png" class="img_size">  -->
+                </view>
+                <view class="person_header_font">
+                    <view style="margin-top:53rpx;">
+                        <view class="person_header_font_size" style="font-size:30rpx;"> <span>Angela gogo \n</span> </view>  
+                        <view class="person_header_font_size" style="font-size:22rpx;"> <span>登陆/注册 \n</span> </view>  
+                    </view>
+                </view>                
+        </view>
+        <view class="person_section">
+            <view class="person_section_bgc"><view>
+        </view>
+        <view class="person_footer"/>            
+        </view>
+  </view>
+
+<script>
+    import wepy from 'wepy';
+export default class personCenter extends wepy.page {
+    
+}
+</script>
+<style lang="less">
+.person_header {
+  width: 100%;
+  .person_header_img {
+    width: 20%;
+    display: inline-block;
+    .img_size {
+      width: 102rpx;
+      vertical-align:bottom;
+      height: 102rpx;
+      margin-left: 31rpx;
+      margin-top: 57rpx;
+    }
+  }
+  .person_header_font {
+    width: 80%;
+    color: #fff;
+    display: inline-block;
+    .person_header_font_size {
+      text-align: left;
+    }
+  }
+}
+
+</style></view></view>

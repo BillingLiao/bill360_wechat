@@ -1,0 +1,26 @@
+
+<view class='container'>
+<view style="text-align:center;" wx:if="{{!isauthorization}}">
+  <image src="./../../img/authorize.png" class="img"></image>
+  <view class="wenzi">需要您的授权才能使用哦</view>
+  <view>
+    <button class='clickauthorize' open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="default">登录请先授权</button>
+  </view>
+</view>
+<view class='login' wx:else>
+    <view class='loginuser'>
+      <view class='user_pic'>
+        <image src='{{avatarUrl}}'></image>
+      </view>
+      <text class='clickLogin' bindtap="login">{{loginInfo}}</text>
+    </view>
+    <view class='user-settings'>
+      <view class='setting-item' bindtap="jumpBindPhone">
+        <image class='setting-logo' src='./../img/phone@2x.png'></image>
+        <text class='setting-name'>绑定手机</text>
+        <image class='right_arrow' src='./../img/arrow_right_list.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='msg-toast' wx:if="{{msgToastFlag}}">{{msgToast}}</view>

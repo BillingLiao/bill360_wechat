@@ -1,0 +1,51 @@
+
+  <view>
+    <view>
+      <view class="precise_search_dingdan">
+        <view class="wd">
+          <view class="top_info gery_color">业务信息</view>
+          <view class="top_info black_color mg_29">业务编号：</view>          
+        </view>
+        <view class="bgc_gery"/>
+        <view class="wd">
+          <view class="top_info gery_color">票面信息</view>
+          <view class="top_info black_color mg_29">票据编号：{{ordAddId}}</view>          
+          <view class="top_info black_color mg_29">核心企业：{{ordAddBillCore}}</view>
+          <view class="top_info black_color mg_29" wx:if="{{ordAddBillInvoice == ''}}">承兑企业：全部</view>
+          <view class="top_info black_color mg_29" wx:else>承兑企业：{{ordAddBillInvoice}}</view>        
+          <view class="top_info black_color mg_29">金额(元)：{{ordAddBillMoney}}</view>          
+          <view class="top_info black_color mg_29">到期时间：{{ordAddBillTime}}</view>                           
+        </view>
+        <view class="bgc_gery"/>
+        <view class="wd">
+          <view class="top_info gery_color">融资信息</view>
+          <view class="top_info black_color mg_29">保理金额(元)：{{ordAddBillSubsidy}}</view>
+          <view class="top_info black_color mg_29">利息：{{ordAddBillInterest}}</view>          
+          <view class="top_info black_color mg_29">计息天数：{{ordAddBillDay}}</view>          
+        </view>
+        <view class="bgc_gery"/>
+        <view class="wd">
+          <view class="top_info gery_color">商票照片</view>
+          <view class="top_info black_color mg_29"><image src="{{ordAddBillImg}}" style="width:100%;"/></view>          
+        </view>
+        <view class="bgc_gery"/>
+        <view class="wd">
+          <view class="top_info gery_color">服务专员</view>
+          <view>
+            <view class="top_info black_color mg_29">姓名：李定韬</view>     
+            <view class="top_info black_color mg_29">电话：17322009880</view>
+           <!--
+            <view class="top_info black_color mg_29">姓名：{{ordAddBillName}}</view>     
+            <view class="top_info black_color mg_29">电话：{{ordAddBillPhone}}</view>  
+           --> 
+          </view>
+        </view>
+        <view class="bgc_gery"/>
+        <view class="button_true_no">
+          <view> 
+          <button class="button_font" bindtap="getData">确认提交</button>
+          </view>  
+        </view>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,47 @@
+
+  <view>
+    <view>
+        <view class="tishi" style="margin-top:20rpx;">请确认票面信息，如信息有误请手动更正！</view>
+         <view class="search_result_ul">
+            <view class="search_result_li weight">
+                <input type="text" placeholder="请输入核心企业名额" class="input_search" value="{{core}}" bindinput="coreData"/>                     
+            </view>
+            <view class="search_result_li weight">
+                <view class="search_result_li_three">
+                  <radio-group class="radio-group" bindchange="radioChange">
+                      <label class="radio"  wx:for="{{items}}" wx:key="{{item}}">
+                      <view class="radio_alone"><radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}</view>
+                    </label>
+                  </radio-group>  
+                </view> 
+            </view>
+            <view class="gery_tiao"/> 
+            <view class="search_result_li weight">
+               <view class="search_result_li_left font_32" style="width:30%;">票面信息：</view> 
+                <view class="search_result_li_right"/>
+            </view>
+              <view class="search_result_li weight">
+                <view class="search_result_li_left color_gery">承兑企业</view> 
+                <input class="search_result_li_right text_right" value="{{company}}" bindinput="companyInput"/>
+            </view>   
+                 <view class="search_result_li weight">
+                <view class="search_result_li_left color_gery">金额(元)</view> 
+                <input class="search_result_li_right text_right" type="digit" placeholder="请输入票据金额" bindinput="moneyInput" value="{{money}}"/>
+            </view>   
+                 <view class="search_result_li weight">
+                  <picker mode="date" value="{{date}}" bindchange="bindDateChange">                   
+                <view class="search_result_li_left color_gery">到期日期</view> 
+                <!-- <input   class="search_result_li_right text_right" value="{{day}}" type="text" bindinput="dayInput" > -->
+                <input class="search_result_li_right text_right" placeholder="到期时间" value="{{date}}" disabled/>
+              </picker>
+            </view>   
+        </view>
+        <view class="button_true_no">
+           <!-- <navigator  url="./precise_search_result">  -->
+           <view>
+          <button class="button_font" bindtap="getData">确认无误</button>
+          </view>
+          <!-- </navigator> -->
+        </view>
+    </view>
+  </view>

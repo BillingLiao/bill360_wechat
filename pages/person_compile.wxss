@@ -1,0 +1,45 @@
+.person_compile {
+  width: 90%;
+  margin: 0 auto;
+}
+.person_compile .person_compile_ul {
+  width: 100%;
+  height: 100%;
+}
+.person_compile .person_compile_ul .person_compile_li {
+  height: 300rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.person_compile .person_compile_ul .compile_li_list {
+  color: #818181;
+  width: 20%;
+  vertical-align: top;
+  line-height: 110rpx;
+  height: 110rpx;
+  text-align: left;
+  display: inline-block;
+  font-size: 30rpx;
+}
+.person_compile .person_compile_ul .compile_li_input {
+  width: 80%;
+  font-size: 30rpx;
+  height: 110rpx;
+  display: inline-block;
+}
+.anniu {
+  margin-top: 213rpx;
+  width: 100%;
+  height: 100%;
+  margin-left: 91rpx;
+}
+.anniu .anniu_true {
+  vertical-align: middle;
+  width: 568rpx;
+  line-height: 105rpx;
+  font-size: 32rpx;
+  height: 105rpx;
+  border-radius: 50rpx;
+  background-color: #0249a0;
+  color: #fff;
+}

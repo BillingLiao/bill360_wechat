@@ -1,0 +1,54 @@
+.img_360 {
+  width: 100%;
+  height: 400rpx;
+}
+.login_section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 130rpx;
+}
+.login_section .login_in {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 33rpx;
+  padding-top: 45rpx;
+  box-sizing: border-box;
+}
+.login_section .login_in .phone_icon {
+  width: 28rpx;
+  height: 45rpx;
+}
+.login_section .login_in .code_icon {
+  width: 32rpx;
+  height: 43rpx;
+}
+.login_section .login_in .getCode {
+  color: #0249a0;
+  position: absolute;
+  top: 34rpx;
+  right: 1rpx;
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-size: 30rpx;
+}
+.login_section .login_in .phone_input {
+  vertical-align: bottom;
+  display: inline-block;
+  margin-left: 30rpx;
+  width: 65%;
+}
+.login_footer {
+  width: 100%;
+  margin-top: 120rpx;
+  margin-left: 91rpx;
+}
+.login_footer .blue_button {
+  text-align: center;
+  color: #fff;
+  width: 568rpx;
+  height: 105rpx;
+  font-size: 32rpx;
+  line-height: 105rpx;
+  background-color: #0249a0;
+  border-radius: 50rpx;
+}

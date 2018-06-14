@@ -1,0 +1,9 @@
+
+  <view class="bgc">
+    <image src="{{billImg}}" class="photo_img" bindtap="photos"/>
+           <view>
+    <button class="upload_button" bindtap="affirm_bill_info">
+      <image src="./../img/upload@2x.png" class="upload_img"/>      
+      <span style="vertical-align: middle;"> 上传票据</span>
+    </button> </view>
+  </view>

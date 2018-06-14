@@ -1,0 +1,29 @@
+
+  <view>
+      <view class="person_compile">
+          <ul class="person_compile_ul"  wx:for="{{cardInfo}}" wx:key="{{item}}">
+              <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">姓 \t 名</label>    <input type="text" class="compile_li_input" bindinput="nameInput" value="{{item.name}}"/>
+              </li>
+                 <!-- <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">职 \t 称</label>    <input type="text" class="compile_li_input" bindinput="dutyInput" value="{{item.duty}}">
+              </li> -->
+                 <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">公 \t 司</label>    <input type="text" class="compile_li_input" bindinput="companyInput" value="{{item.company}}"/>
+              </li>
+                 <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">地 \t 址</label>    <input type="text" class="compile_li_input" bindinput="addrInput" value="{{item.addr}}"/>
+              </li>
+                 <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">固 \t 话</label>    <input type="number" class="compile_li_input" bindinput="telInput" value="{{item.tel}}"/>
+              </li>
+                  <li class="person_compile_li"> 
+                <label for="" class="compile_li_list">手机号</label>    <input type="number" class="compile_li_input" bindinput="phoneInput" maxlength="11" value="{{item.phone}}"/>
+              </li>
+               
+          </ul>
+      </view>
+      <view class="anniu">
+          <button class="anniu_true" bindtap="compile_card">确认</button>
+      </view>
+  </view>

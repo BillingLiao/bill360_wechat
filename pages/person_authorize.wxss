@@ -1,0 +1,101 @@
+/* pages/liaobilin/liaobilin.wxss */
+.container {
+  padding: 0;
+}
+
+.clickauthorize{
+  vertical-align: center;
+  margin-top: 20%;
+  background-color:#0249A0;
+}
+.wenzi{
+  font-size: 30rpx;
+  color: gray;
+  margin-top: 10%;
+}
+.img{
+  height: 250rpx;
+  width: 250rpx;
+  margin-top: 20%;
+}
+
+.login{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #F2F2F2;
+} 
+.login .loginuser {
+  width: 100%;
+  height: 200rpx; 
+   background-color: #0249A0; 
+  /* background-color: skyblue; */
+}
+.user_pic {
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  left: 60rpx;
+  top: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user_pic image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%；
+}
+.login .clickLogin{
+  color: #fff;
+  font-weight: bold;
+  height: 200rpx;
+  line-height: 200rpx;
+  display: inline-block;
+  position: absolute;
+  left: 220rpx;
+  width: 500rpx;
+}
+.user-settings {
+  margin-top: 20rpx;
+}
+.user-settings .setting-item{
+  background-color: #fff;
+  position: relative;
+  height: 100rpx;
+  border-bottom: 1px solid #E5E5E5;
+}
+.setting-item .right_arrow {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.setting-item .setting-name{
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #212121;
+  margin-left: 90rpx;
+}
+.setting-logo {
+  position: absolute;
+  left: 20rpx;
+  width: 50rpx;
+  height: 60rpx;
+  top: 20rpx;
+}
+.msg-toast {
+  width: 50%;
+  text-align: center;
+  height:120rpx;
+  line-height:120rpx;
+  padding:0 50rpx;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  left:50%;
+  top:40%;
+  transform:translateX(-50%);
+  color:#fff;
+  border-radius:30rpx;
+}

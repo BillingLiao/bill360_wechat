@@ -1,0 +1,26 @@
+.bgc {
+  height: 100%;
+  background-color: #13376e;
+}
+.photo_img {
+  margin-left: 221rpx;
+  margin-top: 135rpx;
+  width: 307rpx;
+  height: 307rpx;
+}
+.upload_button {
+  text-align: center;
+  margin-left: 129rpx;
+  margin-top: 304rpx;
+  width: 492rpx;
+  height: 105rpx;
+  border-radius: 52.5rpx;
+  position: relative;
+}
+.upload_button .upload_img {
+  position: absolute;
+  top: 29rpx;
+  left: 115rpx;
+  width: 56rpx;
+  height: 46rpx;
+}

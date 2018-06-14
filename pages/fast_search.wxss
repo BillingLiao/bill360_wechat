@@ -1,0 +1,102 @@
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.rrrr {
+  margin-left: 80rpx;
+  height: 97rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #7b7b7b;
+  width: 85%;
+  display: inline-block;
+}
+.clear {
+  zoom: 1;
+}
+.fast_search_up_li {
+  position: relative;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e3e4;
+}
+.fast_search_up {
+  position: relative;
+  height: 55%;
+}
+.fast_search_up .fast_search_up_bgc {
+  position: absolute;
+  border-radius: 10rpx;
+  top: 49rpx;
+  left: 40rpx;
+  width: 670rpx;
+  height: 330rpx;
+  background-color: #fff;
+  background-size: 100% 100%;
+}
+.fast_search_up .fast_search_up_bgc .fast_search_icon {
+  position: absolute;
+  top: 31rpx;
+  left: 31rpx;
+}
+.fast_search_up .fast_search_up_bgc .fast_search_input {
+  margin-left: 80rpx;
+  height: 97rpx;
+  font-size: 28rpx;
+  width: 85%;
+  display: inline-block;
+}
+.fast_search_up .fast_search_div {
+  margin-top: 100rpx;
+}
+.fast_search_up .fast_search_div .fast_search_button {
+  width: 670rpx;
+  position: relative;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.fast_search_up .fast_search_div .fast_search_button .search_icon_font {
+  top: 25%;
+  left: 32%;
+  position: absolute;
+  width: 48rpx;
+  vertical-align: middle;
+  height: 49rpx;
+}
+.fast_search_down {
+  height: 45%;
+  width: 90%;
+  margin: 0 auto;
+}
+.fast_search_down .down_top_font {
+  position: relative;
+}
+.fast_search_down .down_top_font .rrr {
+  margin: 31rpx 0rpx;
+}
+.fast_search_down .down_top_font .rrr .down_top_font_size {
+  font-size: 26rpx;
+  color: #8e8f8f;
+}
+.fast_search_down .down_top_font .rrr .delete_icon {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  width: 39rpx;
+  height: 37rpx;
+}
+.fast_search_down .down_top_font .eee {
+  width: 100%;
+}
+.fast_search_down .down_top_font .eee .history_content {
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  float: left;
+  line-height: 76rpx;
+  text-align: center;
+  width: 45%;
+  height: 76rpx;
+  background-color: #f3f6f9;
+  color: #7b7b7b;
+  font-size: 28rpx;
+}

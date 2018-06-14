@@ -1,0 +1,64 @@
+.font_32 {
+  font-size: 32rpx;
+}
+.color_gery {
+  color: #9f9f9f;
+}
+.text_right {
+  text-align: right;
+}
+.tishi {
+  background-color: #0249a0;
+  color: #9dc2ef;
+  height: 100rpx;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.gery_tiao {
+  background-color: #eef1f4;
+  height: 20rpx;
+}
+.radio_alone {
+  width: 33.333333%;
+  font-size: 32rpx;
+  display: inline-block;
+}
+.input_search {
+  padding-top: 35rpx;
+}
+.search_result_li {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1rpx solid #efeded;
+  line-height: 110rpx;
+  height: 110rpx;
+  font-size: 30rpx;
+  color: #242424;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+}
+.search_result_li .search_result_li_left {
+  width: 20%;
+  display: inline-block;
+}
+.search_result_li .search_result_li_right {
+  width: 80%;
+  vertical-align: middle;
+  text-align: right;
+  display: inline-block;
+}
+.button_true_no {
+  margin-top: 131rpx;
+}
+.button_true_no .button_font {
+  height: 104rpx;
+  width: 670rpx;
+  line-height: 104rpx;
+  color: #fff;
+  background-color: #0249a0;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 52rpx;
+  margin-left: 40rpx;
+}
