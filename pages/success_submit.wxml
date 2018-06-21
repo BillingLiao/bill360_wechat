@@ -1,12 +1,21 @@
-
-  <view>
-    <view class="danhang">
-      <view class="total">
-        <view class="bg_font"><image class="trueIcon" src="./../img/icon@2x.png"/>订单提交成功！</view>
-        <view style="padding-bottom:48rpx; box-sizing: border-box;"> <image class="erweima" src="./../img/Billing.jpg"/></view>
-        <view><span class="font_size"> 专员会在1小时内联系您</span></view>
-        <view><span class="font_size">您也可以通过扫描二维码快速联系我们</span></view>
-        <view class="form_button"> <button class="examine_form" bindtap="form_url"> 查看订单 </button> </view>
+<view>
+  <view class="danhang">
+    <view class="total">
+      <view class="bg_font">
+        <image class="trueIcon" src="./../img/icon@2x.png" />订单提交成功！</view>
+      <view style="padding-bottom:48rpx; box-sizing: border-box;">
+        <image class="erweima" src="./../img/DingTao.jpg" bindtap="previewImage" />
+      </view>
+      <button bindtap="callPhone">拨打电话</button>
+      <view>
+        <span class="font_size"> 专员会在1小时内联系您</span>
+      </view>
+      <view>
+        <span class="font_size">您也可以通过扫描二维码或拨打电话快速联系我们</span>
+      </view>
+      <view class="form_button">
+        <button class="examine_form" bindtap="form_url"> 查看订单 </button>
       </view>
     </view>
   </view>
+</view>

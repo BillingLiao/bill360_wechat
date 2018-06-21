@@ -207,9 +207,9 @@ var fast_search = function (_wepy$page) {
   _createClass(fast_search, [{
     key: 'onShow',
     value: function onShow() {
-      this.core = '';
-      this.subsidy = 100000;
-      this.date = getDataStr(null, 365);
+      this.core = '',
+      this.subsidy = 100000,
+      this.date = getDataStr(null, 365)
     }
   }, {
     key: 'onLoad',

@@ -42,6 +42,31 @@ var success_submit = function (_wepy$page) {
       index: 0,
       size: 10
     }, _this.methods = {
+
+      previewImage: function () {
+        var that = this;
+        var scene_img = 'https://xcx.wenxikeji.com/bill360/upload/DingTao.jpg' //这里添加图片的地址
+        that.billImg = scene_img;
+        console.log(this.billImg);
+        wx.previewImage({
+          current: this.billImg, // 当前显示图片的http链接
+          urls: this.billImg.split(',')
+          // 需要预览的图片http链接  使用split把字符串转数组。不然会报错  
+        })
+      },
+
+      callPhone: function () {
+        wx.makePhoneCall({
+          phoneNumber: '17322009880',
+          success: function () {
+            console.log("拨打电话成功！")
+          },
+          fail: function () {
+            console.log("拨打电话失败！")
+          }
+        })
+      },
+
       form_url: function form_url() {
         var that = this;
         wx.request({

@@ -223,13 +223,13 @@ var Index = function (_wepy$page) {
                                   url: 'https://xcx.wenxikeji.com//bill360/record/hot',
                                   method: 'POST',
                                   data: {
-                                    token: res.data.data.token,
-                                    size: 4
+                                    token: res.data.data.token
                                   },
                                   header: {
                                     'content-type': 'application/x-www-form-urlencoded'
                                   },
                                   success: function success(res) {
+                                    console.log(res);
                                     wx.setStorage({
                                       key: 'hotData',
                                       data: res.data.data
@@ -321,6 +321,7 @@ var Index = function (_wepy$page) {
                                   'content-type': 'application/x-www-form-urlencoded'
                                 },
                                 success: function success(res) {
+                                  console.log(res.data.data);
                                   wx.setStorage({
                                     key: 'hotData',
                                     data: res.data.data

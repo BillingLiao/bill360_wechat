@@ -46,7 +46,7 @@
                <!-- <image src="./../img/delete@2x.png" class="delete_icon" bindtap="cleanHot"> -->
             </view>
             <view class="eee"  wx:for="{{hotData}}" wx:key="item">
-              <view class="history_content" bindtap="clickHot" data-title="{{item.word}}" style="display:{{hotNone}}">{{item.word}}</view> 
+              <view class="history_content" bindtap="clickHot" data-title="{{item}}" style="display:{{hotNone}}">{{item}}</view> 
             </view>
         </view> 
     </view>    

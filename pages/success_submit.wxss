@@ -4,7 +4,7 @@
   height: 100%;
 }
 .total {
-  padding-top: 250rpx;
+  padding-top: 245rpx;
   box-sizing: border-box;
 }
 .total .trueIcon {
@@ -29,7 +29,7 @@
   color: #515558;
 }
 .total .form_button {
-  padding-top: 269rpx;
+  padding-top: 245rpx;
   box-sizing: border-box;
   font-size: 28rpx;
   display: inline-block;

@@ -46,7 +46,6 @@ var personCenter = function (_wepy$page) {
       invoice: '',
       index: 0,
       size: 10,
-      endDate: '',
       date: '',
       company: '',
       preciseData: '',
@@ -57,14 +56,6 @@ var personCenter = function (_wepy$page) {
       money: '',
       billId: ''
     }, _this.methods = {
-      bindDateChange: function bindDateChange(e) {
-        var that = this;
-        this.date = e.detail.value;
-        wx.setStorage({
-          key: 'endDate',
-          data: that.date
-        });
-      },
       getData: function getData() {
         var that = this;
         wx.request({
@@ -123,32 +114,16 @@ var personCenter = function (_wepy$page) {
             }
           }
         });
-
-        /*
-        // 获取渠道列表
-        wx.request({
-          url: 'https://xcx.wenxikeji.com//bill360/source/find',
-          data: {
-            token: that.token,
-            index: that.index,
-            size: that.size,
-            money: that.money,
-            level: that.level,
-            invoice: that.company
-          },
-          method: 'POST',
-          header: { 'content-type': 'application/x-www-form-urlencoded' },
-          success: function success(res) {
-            that.sourceFind = res.data.data.content;
-            wx.setStorage({
-              key: 'sourceFind',
-              data: that.sourceFind
-            });
-          }
-        });
-        */
       }, 
 
+      bindDateChange: function bindDateChange(e) {
+        var that = this;
+        this.date = e.detail.value;
+        wx.setStorage({
+          key: 'endDate',
+          data: that.date
+        });
+      },
       radioChange: function radioChange(e) {
         this.type = e.detail.value;
       },
@@ -170,7 +145,8 @@ var personCenter = function (_wepy$page) {
           key: 'company',
           data: that.company
         });
-      },
+      }
+      /*
       dayInput: function dayInput(input) {
         var that = this;
         this.day = input.detail.value;
@@ -179,6 +155,7 @@ var personCenter = function (_wepy$page) {
           data: that.day
         });
       }
+      */
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -217,10 +194,10 @@ var personCenter = function (_wepy$page) {
   }, {
     key: 'onShow',
     value: function onShow() {
-      this.date = "";
-      this.company = "";
-      this.money = "";
-      this.core = "";
+      this.date = '',
+      this.company = '',
+      this.money = '',
+      this.core = ''
     }
   }]);
 
